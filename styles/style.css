@@ -1,0 +1,43 @@
+body {
+    background-color: #f9f9f9;
+}
+
+#parent {
+    height: 1000px;
+    background: url(../assets/model1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -180px;
+    background-position-x: 100px;
+}
+
+#parent header {
+    font-family: 'Mada', sans-serif;
+    padding: 60px 0;
+}
+
+#parent header .logo h1 {
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#parent header nav {
+    float: right;
+}
+
+#parent header nav ul li {
+    float: left;
+    list-style-type: none;
+}
+
+#parent header nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 40px;
+    color: #000;
+}
+
