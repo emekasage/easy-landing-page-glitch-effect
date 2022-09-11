@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position-y: -180px;
     background-position-x: 100px;
+    position: relative;
 }
 
 #parent header {
@@ -28,7 +29,6 @@ body {
 
 #parent header nav ul li {
     float: left;
-    list-style-type: none;
 }
 
 #parent header nav ul li a {
@@ -53,6 +53,10 @@ body {
 #parent section .title h4 {
     font-family: 'Mada', sans-serif;
     font-size: 14px;
+}
+
+#parent section .title .glitch .display {
+    position: relative;
 }
 
 #parent section .title h1 {
@@ -119,4 +123,145 @@ body {
     background-color: #4caf50;
     color: #fff;
     border: 1px solid #4caf50;
+}
+
+#parent section aside {
+    transform-origin: right;
+    transform: rotate(90deg);
+    position: relative;
+    top: 600px;
+}
+
+#parent section aside li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+#parent section aside li a {
+    text-decoration: none;
+    font-family: 'Mada', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+#parent footer {
+    height: 240px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#parent footer .left {
+    background-color: #eee;
+    height: inherit;
+    width: 100%;
+}
+
+#parent footer .right {
+    background-color: #273238;
+    height: inherit;
+    width: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#parent footer .left .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+#parent footer .left .content h1 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#parent footer .left .content a {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: #6b6b6b;
+}
+
+#parent footer .left .content a:hover {
+    color: #000;
+}
+
+#parent footer .left .content h4 {
+    font-size: 14px;
+    font-family: 'Mada', sans-serif;
+}
+
+#parent footer .foo {
+    position: relative;
+    z-index: 3;
+}
+
+#parent footer .pic {
+    position: relative;
+    height: 290px;
+    width: 100%;
+    bottom: 50px;
+    overflow: hidden;
+}
+
+#parent footer .foo.btn {
+    display: flex;
+    bottom: 50px;
+}
+
+#parent footer .foo.btn .swiper-button-next, .swiper-button-prev {
+    position: static;
+    top: 0;
+    width: unset;
+    height: 50px;
+    margin-top: 0;
+    background-image: none;
+}
+
+#parent footer .foo.btn .swiper-button-prev {
+    position: static;
+    top: 0;
+    width: unset;
+    height: 50px;
+    margin-top: 0;
+    background-image: none;
+}
+
+#parent footer .foo.btn button {
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #273238;
+    color: #fff;
+    padding: 18px;
+    transition: all 250ms ease-in-out;
+}
+
+#parent footer .foo.btn button:hover {
+    background-color: #192125;
+}
+
+#parent footer .foo.text {
+    padding-left: 20px;
+    font-family: 'Mada', sans-serif;
+    color: #fff;
+}
+
+#parent footer .foo.text h4 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#parent footer .foo.text p {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
 }

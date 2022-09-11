@@ -7,11 +7,13 @@
     <title>Agbava</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery-glitch.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="styles/unsemantic-grid-responsive-tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mada:wght@300;400;500;600;700&family=Fira+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="parent">
@@ -40,7 +42,9 @@
                 <div class="grid-50">
                     <div class="title">
                         <h4>sleek</h4>
-                        <h1>tranquility</h1>
+                        <div class="glitch">
+                            <h1>tranquility</h1>
+                        </div>
                     </div>
                     <div class="content">
                         <h5>Wire</h5>
@@ -62,9 +66,106 @@
                         <a href="#"><i class="lab la-spotify"></i></a>
                     </div>
                 </div>
+                <div class="grid-50">
+                    <aside>
+                        <ul>
+                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">instagram</a></li>
+                            <li><a href="#">twitter</a></li>
+                        </ul>
+                    </aside>
+                </div>
             </div>
         </section>
+        <footer>
+            <div class="left">
+                <div class="grid-container">
+                    <div class="grid-50 grid-parent">
+                        <div class="grid-33">
+                            <div class="content">
+                                <h1>16:00</h1>
+                                <h4>10, September 2022</h4>
+                            </div>
+                        </div>
+                        <div class="grid-33">
+                            <div class="content">
+                                <a href="#">Misan</a>
+                                <h4>Event Coordinator</h4>
+                            </div>
+                        </div>
+                        <div class="grid-33">
+                            <div class="content">
+                                <a href="#">Yinka</a>
+                                <h4>Tech Enthusiast</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-50 grid-parent">
+                        <div class="grid-50 grid-parent">
+                            <div class="foo pic">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/swipe1.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/swipe2.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/swipe3.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/swipe4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-50 grid-parent">
+                            <div class="foo btn">
+                                <button class="swiper-button-next">
+                                    <i class="la la-angle-left"></i>
+                                </button>
+                                <button class="swiper-button-prev">
+                                    <i class="la la-angle-right"></i>
+                                </button>
+                            </div>
+                            <div class="foo text">
+                                <h4>advice</h4>
+                                <p>Dress well make o, make boys no follow
+                                    you shine, then open office for your
+                                    head.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </footer>
     </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery-glitch.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        });
+
+        $(".glitch").glitch({
+            layers: ["red", "green", "orange"],
+            offset: [10, 0]
+        })
+    </script>
     
 </body>
 </html>
